@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from . models import stud
 from . models import society
 
+# these are python function
+
 
 def index(request):
     return HttpResponse("you have reached school")
