@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <hr size='6' width='50%' color="black">
+        <marquee>Societies</marquee>
+    </h1>
+    <hr size='6' width='50%' color="black">
+    <br>
+    {% for i in students %}
+    <h3> {{i.Ganesh_puja}} {{i.Teachers_day}} {{i.Orientation}} {{i.Saraswati_puja}} {{i.Freshers}} {{i.Picnic}}
+        {{i.Farewell}} </h3>
+    <br>
+    {% endfor %}
+</body>
+
+</html>

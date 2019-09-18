@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            table, th, td 
+            {border:1px solid black;}
+        </style>
+    </head>
+    <body>
+        
+        <hr size='6' width='50%' color="black">
+        <h1><marquee>Students Information</marquee></h1>
+        <hr size='6' width='50%' color="black">
+        
+        
+        <table><align=centre>
+            <tr>
+                <th>Name of Students</th>
+                <th>Roll no.</th>
+                <th>Branch</th>
+                <th>Semester</th>
+            </tr>
+            <tr>
+                <td>
+                    {% for i in students %}
+                        {{i.naam}}
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for i in students %}
+                        {{i.roll}}
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for i in students %}
+                        {{i.Branch}}
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for i in students %}
+                        {{i.sem}}
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
